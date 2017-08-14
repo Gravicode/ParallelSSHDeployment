@@ -1,0 +1,9 @@
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.deps.json
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.runtimeconfig.json
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.runtimeconfig.dev.json
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.dll
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.csprojResolveAssemblyReference.cache
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.AssemblyInfo.cs
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.pdb
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.dll
+c:\experiment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.pdb
