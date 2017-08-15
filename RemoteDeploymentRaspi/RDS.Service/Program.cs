@@ -12,7 +12,7 @@ namespace RDS.Service
         public const string ConStr = "vFfVFMQI5xC/Q4Ib4Y08mcrup6hNixMV8zYu7lqte4g=@redis-murahaje.redis.cache.windows.net:6379";
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Start deployment service!");
             GenerateSampleData();
 
             while (true)
@@ -83,7 +83,7 @@ namespace RDS.Service
 
                 // quick way to use ist, but not best practice - SshCommand is not Disposed, ExitStatus not checked...
                 Console.WriteLine(sshclient.CreateCommand($"cd Downloads/ && wget -O foo-{rnd.Next(1,100)}.html google.com").Execute());
-                
+                Console.WriteLine($"SSH executed on {Dev.Name}");
                 sshclient.Disconnect();
             }
         }
@@ -98,6 +98,9 @@ namespace RDS.Service
                 {
                     var node = new DeviceIdentity() { Id = redisTodos.GetNextSequence(), Name = "Raspi-1", Desc = "this is first device", IpAddress = "192.168.100.43", UserName="root", Password="raspberry" };
                     redisTodos.Store(node);
+                    var node2 = new DeviceIdentity() { Id = redisTodos.GetNextSequence(), Name = "Raspi-2", Desc = "this is second device", IpAddress = "192.168.100.44", UserName = "root", Password = "raspberry" };
+                    redisTodos.Store(node2);
+
                 }
             }
         }

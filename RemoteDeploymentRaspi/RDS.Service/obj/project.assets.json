@@ -8116,10 +8116,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\experiment\\RemoteDeploymentRaspi\\RDS.Service\\RDS.Service.csproj",
+      "projectUniqueName": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Service\\RDS.Service.csproj",
       "projectName": "RDS.Service",
-      "projectPath": "c:\\experiment\\RemoteDeploymentRaspi\\RDS.Service\\RDS.Service.csproj",
-      "outputPath": "c:\\experiment\\RemoteDeploymentRaspi\\RDS.Service\\obj\\",
+      "projectPath": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Service\\RDS.Service.csproj",
+      "outputPath": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Service\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
