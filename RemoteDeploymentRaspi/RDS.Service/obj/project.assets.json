@@ -356,6 +356,19 @@
           }
         }
       },
+      "morelinq/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.ValueTuple": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/MoreLinq.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/MoreLinq.dll": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -2511,6 +2524,20 @@
           "ref/netstandard1.2/System.Threading.Timer.dll": {}
         }
       },
+      "System.ValueTuple/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.ValueTuple.dll": {}
+        }
+      },
       "System.Xml.ReaderWriter/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2668,6 +2695,13 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
+      "RDS.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
         }
       }
     }
@@ -3059,6 +3093,21 @@
         "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netcore50/_._",
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
+      ]
+    },
+    "morelinq/2.6.0": {
+      "sha512": "tlKZWsl+djJRWk5O+16BErpnoJshs1iX9FCxn4LLxWalXJeqY6S2jtI5H2/NdR8qDZ58MyxBRYYBsWY0B4WFfA==",
+      "type": "package",
+      "path": "morelinq/2.6.0",
+      "files": [
+        "lib/net35/MoreLinq.dll",
+        "lib/net35/MoreLinq.xml",
+        "lib/net40/MoreLinq.dll",
+        "lib/net40/MoreLinq.xml",
+        "lib/netstandard1.0/MoreLinq.dll",
+        "lib/netstandard1.0/MoreLinq.xml",
+        "morelinq.2.6.0.nupkg.sha512",
+        "morelinq.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -7747,6 +7796,21 @@
         "system.threading.timer.nuspec"
       ]
     },
+    "System.ValueTuple/4.3.0": {
+      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
+      "type": "package",
+      "path": "system.valuetuple/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/.xml",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/.xml",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "system.valuetuple.4.3.0.nupkg.sha512",
+        "system.valuetuple.nuspec"
+      ]
+    },
     "System.Xml.ReaderWriter/4.3.0": {
       "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "type": "package",
@@ -8099,15 +8163,22 @@
         "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "RDS.Data/1.0.0": {
+      "type": "project",
+      "path": "../RDS.Data/RDS.Data.csproj",
+      "msbuildProject": "../RDS.Data/RDS.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
       "Microsoft.NETCore.App >= 1.1.2",
+      "RDS.Data >= 1.0.0",
       "SSH.NET >= 2016.0.0",
       "ServiceStack.Redis.Core >= 1.0.43",
       "System.Threading.Tasks >= 4.3.0",
-      "System.Threading.Tasks.Parallel >= 4.3.0"
+      "System.Threading.Tasks.Parallel >= 4.3.0",
+      "morelinq >= 2.6.0"
     ]
   },
   "packageFolders": {
@@ -8126,7 +8197,11 @@
       ],
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj": {
+              "projectPath": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj"
+            }
+          }
         }
       }
     },
@@ -8149,6 +8224,10 @@
           "System.Threading.Tasks.Parallel": {
             "target": "Package",
             "version": "4.3.0"
+          },
+          "morelinq": {
+            "target": "Package",
+            "version": "2.6.0"
           },
           "System.Threading.Tasks": {
             "target": "Package",

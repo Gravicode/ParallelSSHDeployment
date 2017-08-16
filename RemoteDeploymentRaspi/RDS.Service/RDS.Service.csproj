@@ -6,10 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="morelinq" Version="2.6.0" />
     <PackageReference Include="ServiceStack.Redis.Core" Version="1.0.43" />
     <PackageReference Include="SSH.NET" Version="2016.0.0" />
     <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
     <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RDS.Data\RDS.Data.csproj" />
   </ItemGroup>
 
 </Project>

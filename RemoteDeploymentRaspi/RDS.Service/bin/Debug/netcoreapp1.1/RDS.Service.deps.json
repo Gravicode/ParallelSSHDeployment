@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v1.1": {
       "rds.service/1.0.0": {
         "dependencies": {
+          "RDS.Data": "1.0.0",
           "SSH.NET": "2016.0.0",
           "ServiceStack.Redis.Core": "1.0.43"
         },
@@ -183,6 +184,11 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "rds.data/1.0.0": {
+        "runtime": {
+          "RDS.Data.dll": {}
+        }
       }
     }
   },
@@ -331,6 +337,11 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "rds.data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

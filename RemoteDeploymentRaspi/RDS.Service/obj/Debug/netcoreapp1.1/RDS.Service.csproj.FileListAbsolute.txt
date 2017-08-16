@@ -16,3 +16,4 @@ c:\experiment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Serv
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.AssemblyInfo.cs
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.dll
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.pdb
+\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Data.dll

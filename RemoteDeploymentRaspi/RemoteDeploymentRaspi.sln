@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDS.Service", "RDS.Service\RDS.Service.csproj", "{2EA30A66-312B-41AF-A5DB-FF82E558ECBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RDS.Service", "RDS.Service\RDS.Service.csproj", "{2EA30A66-312B-41AF-A5DB-FF82E558ECBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDS.Web", "RDS.Web\RDS.Web.csproj", "{A23ADF1D-1B39-4369-822A-F2016048F5DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDS.Data", "RDS.Data\RDS.Data.csproj", "{AE82E8F0-24C6-4E2D-9587-746379E261BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2EA30A66-312B-41AF-A5DB-FF82E558ECBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EA30A66-312B-41AF-A5DB-FF82E558ECBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EA30A66-312B-41AF-A5DB-FF82E558ECBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23ADF1D-1B39-4369-822A-F2016048F5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23ADF1D-1B39-4369-822A-F2016048F5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23ADF1D-1B39-4369-822A-F2016048F5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23ADF1D-1B39-4369-822A-F2016048F5DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE82E8F0-24C6-4E2D-9587-746379E261BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE82E8F0-24C6-4E2D-9587-746379E261BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE82E8F0-24C6-4E2D-9587-746379E261BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE82E8F0-24C6-4E2D-9587-746379E261BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
-﻿using Renci.SshNet;
+﻿using RDS.Data;
+using Renci.SshNet;
 using ServiceStack.Redis;
 using System;
 using System.Collections.Generic;
@@ -109,17 +110,4 @@ namespace RDS.Service
 
 
 
-    #region entities
-  
-    public class DeviceIdentity
-    {
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public string  Desc { get; set; }
-        public string IpAddress { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-
-    }
-    #endregion
 }
