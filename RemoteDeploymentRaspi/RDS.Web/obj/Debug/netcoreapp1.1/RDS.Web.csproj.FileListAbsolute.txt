@@ -1,7 +1,0 @@
-\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Web\bin\Debug\netcoreapp1.1\RDS.Web.deps.json
-\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Web\bin\Debug\netcoreapp1.1\RDS.Web.runtimeconfig.json
-\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Web\bin\Debug\netcoreapp1.1\RDS.Web.runtimeconfig.dev.json
-\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Web\bin\Debug\netcoreapp1.1\RDS.Web.dll
-\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Web\obj\Debug\netcoreapp1.1\RDS.Web.csprojResolveAssemblyReference.cache
-\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Web\obj\Debug\netcoreapp1.1\RDS.Web.AssemblyInfo.cs
-\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Web\bin\Debug\netcoreapp1.1\RDS.Data.dll

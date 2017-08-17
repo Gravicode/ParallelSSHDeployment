@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\bin\Debug\netstandard1.4\RDS.Data.deps.json
+\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\bin\Debug\netstandard1.4\RDS.Data.dll
+\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\bin\Debug\netstandard1.4\RDS.Data.pdb
+\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.AssemblyInfo.cs
+\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.dll
+\\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.pdb

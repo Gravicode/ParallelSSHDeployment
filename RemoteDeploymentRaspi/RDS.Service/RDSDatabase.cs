@@ -13,12 +13,12 @@ using RDS.Data;
 /// </summary>
 namespace RDS.Service
 {
-    public class SocialDb : IDataAccess
+    public class RDSDatabase : IDataAccess
     {
         public static IRedisClientsManager redisManager;
         public static int DbId { set; get; } = 1;
         public static string RedisConStr { set; get; } = "vFfVFMQI5xC/Q4Ib4Y08mcrup6hNixMV8zYu7lqte4g=@redis-murahaje.redis.cache.windows.net:6379";
-        public SocialDb()
+        public RDSDatabase()
         {
 
             if (redisManager == null)

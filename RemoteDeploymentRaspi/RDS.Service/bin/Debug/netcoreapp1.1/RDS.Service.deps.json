@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "69d40c782537358f6be79ba28ecbb307cb0c0c15"
+    "signature": "b151602033e1dff28a0a2e0261fe4392f3367a0f"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,7 +10,8 @@
         "dependencies": {
           "RDS.Data": "1.0.0",
           "SSH.NET": "2016.0.0",
-          "ServiceStack.Redis.Core": "1.0.43"
+          "ServiceStack.Redis.Core": "1.0.43",
+          "morelinq": "2.6.0"
         },
         "runtime": {
           "RDS.Service.dll": {}
@@ -22,6 +23,14 @@
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "morelinq/2.6.0": {
+        "dependencies": {
+          "System.ValueTuple": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/MoreLinq.dll": {}
         }
       },
       "servicestack.common.core/1.0.43": {
@@ -164,6 +173,11 @@
           "lib/netstandard1.3/System.Runtime.Serialization.Xml.dll": {}
         }
       },
+      "system.valuetuple/4.3.0": {
+        "runtime": {
+          "lib/netstandard1.0/System.ValueTuple.dll": {}
+        }
+      },
       "system.xml.xmldocument/4.3.0": {
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
@@ -204,6 +218,13 @@
       "sha512": "sha512-CBuBSrqFCYe1pHpdg9dyZxi8Nl+tAUNa9H8566jTxspzGWyFmMFBjJ3PU9Grx6WFginP69/jOqZuh3UDsvJvyQ==",
       "path": "microsoft.extensions.primitives/1.1.1",
       "hashPath": "microsoft.extensions.primitives.1.1.1.nupkg.sha512"
+    },
+    "morelinq/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tlKZWsl+djJRWk5O+16BErpnoJshs1iX9FCxn4LLxWalXJeqY6S2jtI5H2/NdR8qDZ58MyxBRYYBsWY0B4WFfA==",
+      "path": "morelinq/2.6.0",
+      "hashPath": "morelinq.2.6.0.nupkg.sha512"
     },
     "servicestack.common.core/1.0.43": {
       "type": "package",
@@ -316,6 +337,13 @@
       "sha512": "sha512-nUQx/5OVgrqEba3+j7OdiofvVq9koWZAC7Z3xGI8IIViZqApWnZ5+lLcwYgTlbkobrl/Rat+Jb8GeD4WQESD2A==",
       "path": "system.runtime.serialization.xml/4.3.0",
       "hashPath": "system.runtime.serialization.xml.4.3.0.nupkg.sha512"
+    },
+    "system.valuetuple/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
+      "path": "system.valuetuple/4.3.0",
+      "hashPath": "system.valuetuple.4.3.0.nupkg.sha512"
     },
     "system.xml.xmldocument/4.3.0": {
       "type": "package",
