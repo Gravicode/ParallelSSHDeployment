@@ -10308,10 +10308,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Web\\RdsWeb.csproj",
+      "projectUniqueName": "C:\\Jobs\\Elitery\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Web\\RdsWeb.csproj",
       "projectName": "RdsWeb",
-      "projectPath": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Web\\RdsWeb.csproj",
-      "outputPath": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Web\\obj\\",
+      "projectPath": "C:\\Jobs\\Elitery\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Web\\RdsWeb.csproj",
+      "outputPath": "C:\\Jobs\\Elitery\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Web\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -10319,8 +10319,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj": {
-              "projectPath": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj"
+            "C:\\Jobs\\Elitery\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj": {
+              "projectPath": "C:\\Jobs\\Elitery\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj"
             }
           }
         }

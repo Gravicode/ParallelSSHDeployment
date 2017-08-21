@@ -5,3 +5,9 @@
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.AssemblyInfo.cs
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.dll
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.pdb
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\bin\Debug\netstandard1.4\RDS.Data.deps.json
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\bin\Debug\netstandard1.4\RDS.Data.dll
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\bin\Debug\netstandard1.4\RDS.Data.pdb
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.AssemblyInfo.cs
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.dll
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Data\obj\Debug\netstandard1.4\RDS.Data.pdb

@@ -1,0 +1,107 @@
+﻿<template>
+    <h1>Device Identities</h1>
+
+    <p>All registered devices will be listed in here.</p>
+
+    <p if.bind="!mydevices"><em>Loading...</em></p>
+    <div css="display: ${mode!='list' ? 'none' : 'block'}">
+        <table if.bind="mydevices" class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Desc</th>
+                    <th>IP</th>
+                    <th>Firmaware Ver.</th>
+                    <th>Location</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr repeat.for="device of mydevices">
+                    <td>${ device.name }</td>
+                    <td>${ device.desc }</td>
+                    <td>${ device.ipAddress }</td>
+                    <td>${ device.firmwareVersion }</td>
+                    <td>${ device.location }</td>
+                    <td>
+                        <button class="btn" click.trigger='Update(device)'>Update</button>
+                        <button class="btn" click.trigger='Delete(device)'>Delete</button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn" id='btnAdd' click.trigger='addNew()'>Add New Device</button>
+    </div>
+    <div css="display: ${mode!='add' ? 'none' : 'block'}">
+        <div class="form-group">
+            <label for="name">Device Name:</label>
+            <input type="text" class="form-control" value.bind="node.name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="desc">Description:</label>
+            <input type="text" class="form-control" value.bind="node.desc" id="desc">
+        </div>
+        <div class="form-group">
+            <label for="ipaddress">IP address:</label>
+            <input type="text" class="form-control" value.bind="node.ipAddress" id="ipaddress">
+        </div>
+        <div class="form-group">
+            <label for="firmwareversion">Firmware version:</label>
+            <input type="text" class="form-control" value.bind="node.firmwareVersion" id="firmwareversion">
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" class="form-control" value.bind="node.location"  id="location">
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" value.bind="node.userName" id="userName">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" value.bind="node.password" id="password">
+        </div>
+        <button class="btn" id='btnSave' click.trigger='saveData()'>Save</button>
+        <button class="btn" id='btnCancel' click.trigger='back()'>Cancel</button>
+    </div>
+
+    <div css="display: ${mode!='update' ? 'none' : 'block'}">
+        <div class="form-group">
+            <label for="name">Device Name:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.name" id="name1">
+        </div>
+        <div class="form-group">
+            <label for="desc">Description:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.desc" id="desc1">
+        </div>
+        <div class="form-group">
+            <label for="ipaddress">IP address:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.ipAddress" id="ipaddress1">
+        </div>
+        <div class="form-group">
+            <label for="firmwareversion">Firmware version:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.firmwareVersion" id="firmwareversion1">
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.location" id="location1">
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.userName" id="userName1">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" value.bind="UpdatedNode.password" id="password1">
+        </div>
+        <button class="btn" id='btnSave1' click.trigger='updateData()'>Save</button>
+        <button class="btn" id='btnCancel1' click.trigger='back()'>Cancel</button>
+    </div>
+    <div css="display: ${mode!='delete' ? 'none' : 'block'}">
+        <p>Are you sure to delete this data ?</p>
+        <button class="btn" id='btnDel1' click.trigger='deleteData()'>Delete</button>
+        <button class="btn" id='btnCancel2' click.trigger='back()'>Cancel</button>
+    </div>
+
+</template>

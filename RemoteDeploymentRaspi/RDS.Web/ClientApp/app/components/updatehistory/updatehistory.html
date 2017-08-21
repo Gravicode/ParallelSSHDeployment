@@ -1,0 +1,91 @@
+﻿<template>
+    <h1>Update History</h1>
+
+    <p>All Update History will be listed in here.</p>
+
+    <p if.bind="!myUpdateHistorys"><em>Loading...</em></p>
+    <div css="display: ${mode!='list' ? 'none' : 'block'}">
+        <table if.bind="myUpdateHistorys" class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th>Update Date</th>
+                    <th>Update By</th>
+                    <th>Firmware Version</th>
+                    <th>Device ID</th>
+                    <th>Device Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr repeat.for="item of myUpdateHistorys">
+                    <td>${ item.updateDate }</td>
+                    <td>${ item.updateBy }</td>
+                    <td>${ item.firmwareVersion }</td>
+                    <td>${ item.deviceId }</td>
+                    <td>${ item.deviceName }</td>
+                    <td>
+                        <button class="btn" click.trigger='Update(item)'>Update</button>
+                        <button class="btn" click.trigger='Delete(item)'>Delete</button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn" id='btnAdd' click.trigger='addNew()'>Add New Update History</button>
+    </div>
+    <div css="display: ${mode!='add' ? 'none' : 'block'}">
+        <div class="form-group">
+            <label for="updatedate">Updated Date:</label>
+            <input type="text" class="form-control" value.bind="node.updateDate" id="updatedate">
+        </div>
+        <div class="form-group">
+            <label for="updateby">Updated By:</label>
+            <input type="text" class="form-control" value.bind="node.updateBy" id="updateby">
+        </div>
+        <div class="form-group">
+            <label for="firmwareversion">Firmware Version:</label>
+            <input type="text" class="form-control" value.bind="node.firmwareVersion" id="firmwareversion">
+        </div>
+        <div class="form-group">
+            <label for="deviceid">Device ID:</label>
+            <input type="text" class="form-control" value.bind="node.deviceId" id="deviceid">
+        </div>
+        <div class="form-group">
+            <label for="devicename">Device Name:</label>
+            <input type="text" class="form-control" value.bind="node.deviceName" id="devicename">
+        </div>
+        <button class="btn" id='btnSave' click.trigger='saveData()'>Save</button>
+        <button class="btn" id='btnCancel' click.trigger='back()'>Cancel</button>
+    </div>
+
+    <div css="display: ${mode!='update' ? 'none' : 'block'}">
+        <div class="form-group">
+            <label for="updatedate">Updated Date:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.updateDate" id="updatedate1">
+        </div>
+        <div class="form-group">
+            <label for="updateby">Updated By:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.updateBy" id="updateby1">
+        </div>
+        <div class="form-group">
+            <label for="firmwareversion">Firmware Version:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.firmwareVersion" id="firmwareversion1">
+        </div>
+        <div class="form-group">
+            <label for="deviceid">Device ID:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.deviceId" id="deviceid1">
+        </div>
+        <div class="form-group">
+            <label for="devicename">Device Name:</label>
+            <input type="text" class="form-control" value.bind="UpdatedNode.deviceName" id="devicename1">
+        </div>
+        <button class="btn" id='btnSave1' click.trigger='updateData()'>Save</button>
+        <button class="btn" id='btnCancel1' click.trigger='back()'>Cancel</button>
+    </div>
+    <div css="display: ${mode!='delete' ? 'none' : 'block'}">
+        <p>Are you sure to delete this data ?</p>
+        <button class="btn" id='btnDel1' click.trigger='deleteData()'>Delete</button>
+        <button class="btn" id='btnCancel2' click.trigger='back()'>Cancel</button>
+    </div>
+
+</template>

@@ -13,20 +13,41 @@ export class App {
             moduleId: PLATFORM.moduleName('../home/home'),
             nav: true,
             title: 'Home'
-        }, {
-            route: 'counter',
-            name: 'counter',
-            settings: { icon: 'education' },
-            moduleId: PLATFORM.moduleName('../counter/counter'),
+        },{
+            route: 'devices',
+            name: 'devices',
+            settings: { icon: 'star' },
+            moduleId: PLATFORM.moduleName('../devices/devices'),
             nav: true,
-            title: 'Counter'
+            title: 'List of Devices'
         }, {
-            route: 'fetch-data',
-            name: 'fetchdata',
-            settings: { icon: 'th-list' },
-            moduleId: PLATFORM.moduleName('../fetchdata/fetchdata'),
+            route: 'firmwareinfo',
+            name: 'firmwareinfo',
+            settings: { icon: 'th' },
+            moduleId: PLATFORM.moduleName('../firmwareinfo/firmwareinfo'),
             nav: true,
-            title: 'Fetch data'
+            title: 'List of Firmware'
+        }, {
+            route: 'backupinfo',
+            name: 'backupinfo',
+            settings: { icon: 'inbox' },
+            moduleId: PLATFORM.moduleName('../backupinfo/backupinfo'),
+            nav: true,
+            title: 'List of Backup'
+        }, {
+            route: 'updatehistory',
+            name: 'updatehistory',
+            settings: { icon: 'list-alt' },
+            moduleId: PLATFORM.moduleName('../updatehistory/updatehistory'),
+            nav: true,
+            title: 'List of History'
+        }, {
+            route: 'updateque',
+            name: 'updateque',
+            settings: { icon: 'road' },
+            moduleId: PLATFORM.moduleName('../updateque/updateque'),
+            nav: true,
+            title: 'List of Que'
         }]);
 
         this.router = router;

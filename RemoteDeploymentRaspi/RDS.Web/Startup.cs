@@ -37,8 +37,9 @@ namespace WebApplicationBasic
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            RDSDatabase.RedisConStr = Configuration.GetConnectionString("RedisCon");
+             RDSDatabase.RedisConStr = Configuration.GetConnectionString("RedisCon");
             ObjectContainer.Register<RDSDatabase>(new RDSDatabase());
+           
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 

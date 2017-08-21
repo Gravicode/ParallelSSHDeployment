@@ -3708,10 +3708,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj",
+      "projectUniqueName": "C:\\Jobs\\Elitery\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj",
       "projectName": "RDS.Data",
-      "projectPath": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj",
-      "outputPath": "\\\\vmware-host\\Shared Folders\\Documents\\GitHub\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\obj\\",
+      "projectPath": "C:\\Jobs\\Elitery\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\RDS.Data.csproj",
+      "outputPath": "C:\\Jobs\\Elitery\\ParallelSSHDeployment\\RemoteDeploymentRaspi\\RDS.Data\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"

@@ -68,6 +68,8 @@ namespace RDS.Data
         public long FirmwareId { get; set; }
         public string FirmwareVersion { set; get; }
 
+        public string FirmwareUrl { set; get; }
+
         public char Status { get; set; }
 
         public string UpdatedBy { get; set; }

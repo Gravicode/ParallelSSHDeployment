@@ -10,7 +10,7 @@ namespace RDS.Service
 {
     class Program
     {
-        public const string ConStr = "vFfVFMQI5xC/Q4Ib4Y08mcrup6hNixMV8zYu7lqte4g=@redis-murahaje.redis.cache.windows.net:6379";
+        public const string ConStr = "127.0.0.1:6379"; //"vFfVFMQI5xC/Q4Ib4Y08mcrup6hNixMV8zYu7lqte4g=@redis-murahaje.redis.cache.windows.net:6379";
         static void Main(string[] args)
         {
             Console.WriteLine("Start deployment service!");
@@ -97,9 +97,9 @@ namespace RDS.Service
                 var redisTodos = redis.As<DeviceIdentity>();
                 if (redisTodos.GetAll().Count <= 0)
                 {
-                    var node = new DeviceIdentity() { Id = redisTodos.GetNextSequence(), Name = "Raspi-1", Desc = "this is first device", IpAddress = "192.168.100.43", UserName="root", Password="raspberry" };
+                    var node = new DeviceIdentity() { Id = redisTodos.GetNextSequence(), Name = "Raspi-1", Desc = "this is first device", IpAddress = "192.168.100.43", UserName="root", Password="raspberry", FirmwareVersion="1.0", Location="Jakarta" };
                     redisTodos.Store(node);
-                    var node2 = new DeviceIdentity() { Id = redisTodos.GetNextSequence(), Name = "Raspi-2", Desc = "this is second device", IpAddress = "192.168.100.44", UserName = "root", Password = "raspberry" };
+                    var node2 = new DeviceIdentity() { Id = redisTodos.GetNextSequence(), Name = "Raspi-2", Desc = "this is second device", IpAddress = "192.168.100.44", UserName = "root", Password = "raspberry", FirmwareVersion="1.0", Location="Bogor" };
                     redisTodos.Store(node2);
 
                 }
