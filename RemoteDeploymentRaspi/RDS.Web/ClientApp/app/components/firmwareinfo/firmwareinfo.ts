@@ -106,5 +106,6 @@ interface FirmwareInfo {
     version: string
     releaseDate: Date,
     releaseBy: string,
-    remark: string
+    remark: string,
+    url: string
 }

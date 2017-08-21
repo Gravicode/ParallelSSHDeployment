@@ -42,6 +42,13 @@ export class App {
             nav: true,
             title: 'List of History'
         }, {
+            route: 'upgradefirmware',
+            name: 'upgradefirmware',
+            settings: { icon: 'ok' },
+            moduleId: PLATFORM.moduleName('../upgradefirmware/upgradefirmware'),
+            nav: true,
+            title: 'Upgrade Device Firmware'
+        }, {
             route: 'updateque',
             name: 'updateque',
             settings: { icon: 'road' },

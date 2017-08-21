@@ -55,6 +55,7 @@ namespace RDS.Data
         public DateTime ReleaseDate { get; set; }
         public string ReleaseBy { get; set; }
         public string Remark { get; set; }
+        public string Url { get; set; }
     }
     public class UpdateQue
     {
