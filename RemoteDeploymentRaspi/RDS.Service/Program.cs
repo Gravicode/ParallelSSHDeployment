@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Linq;
+using MoreLinq;
 
 namespace RDS.Service
 {
@@ -18,28 +20,101 @@ namespace RDS.Service
 
             while (true)
             {
-                var devices = GetDevices();
-                Parallel.ForEach(devices, (dev) =>
+                var Ques = GetQues();
+                if (Ques != null && Ques.Count() > 0)
                 {
-                    DoSSH(dev);
-                    Console.WriteLine("Processing {0} on thread {1}", dev.Name, Thread.CurrentThread.ManagedThreadId);
+                    var devices = GetDevices();
+                    //update flag to start
+                    UpdateQueStatus(Ques, 'S');
+                    Parallel.ForEach(Ques, (que) =>
+                    {
+                        var dev = devices[que.DeviceId];
+                        try
+                        {
+                            DoSSH(dev, que);
+                            Console.WriteLine("Processing update on device {0} on thread {1}", dev.Name, Thread.CurrentThread.ManagedThreadId);
+                            que.Status = 'E';
+                        }
+                        catch (Exception ex)
+                        {
+                            que.Status = 'F';
+                            Console.WriteLine("Failure update on device {0} on thread {1}", dev.Name, Thread.CurrentThread.ManagedThreadId);
+                        }
+                        finally
+                        {
+                            que.Attempt += 1;
+                        }
                     //close lambda expression and method invocation
-                });
+                    });
+                    UpdateQueStatus(Ques);
+                    UpdateHistory(Ques);
+                }
                 Thread.Sleep(3000);
 
             }
         }
-        static IEnumerable<DeviceIdentity> GetDevices()
+
+        static void UpdateQueStatus(IEnumerable<UpdateQue> data,char State='X')
+        {
+            
+            using (var redisManager = new PooledRedisClientManager(1, ConStr))
+            using (var redis = redisManager.GetClient())
+            {
+                var redisTodos = redis.As<UpdateQue>();
+                foreach (var item in data)
+                {
+                    if(State!='X')
+                        item.Status = State;
+                    redisTodos.Store(item);
+                }
+            }
+        }
+
+        static void UpdateHistory(IEnumerable<UpdateQue> Ques)
         {
             using (var redisManager = new PooledRedisClientManager(1, ConStr))
             using (var redis = redisManager.GetClient())
             {
-                var redisTodos = redis.As<DeviceIdentity>();
-                return redisTodos.GetAll();
+                var redisTodos = redis.As<UpdateHistory>();
+                var datas = from c in Ques
+                            where c.Status == 'E'
+                            select c;
+                foreach (var item in datas)
+                {
+                    redisTodos.Store(new Data.UpdateHistory() { Id = redisTodos.GetNextSequence(), DeviceId = item.DeviceId, DeviceName = item.DeviceName, FirmwareVersion = item.FirmwareVersion, UpdateBy = "system", UpdateDate = DateTime.Now });
+                }
             }
+        }
+        static IEnumerable<UpdateQue> GetQues()
+        {
+            using (var redisManager = new PooledRedisClientManager(1, ConStr))
+            using (var redis = redisManager.GetClient())
+            {
+                var redisTodos = redis.As<UpdateQue>();
+                var datas = from c in redisTodos.GetAll()
+                            where c.Status == 'P' || (c.Status=='F' && c.Attempt<10)
+                            select c;
+                return datas.ToList();
+            }
+
+        }
+        static Dictionary<long,DeviceIdentity> GetDevices()
+        {
+            var data = new Dictionary<long, DeviceIdentity>();
+            using (var redisManager = new PooledRedisClientManager(1, ConStr))
+            using (var redis = redisManager.GetClient())
+            {
+                var redisTodos = redis.As<DeviceIdentity>();
+                var datas = redisTodos.GetAll();
+                foreach(var item in datas)
+                {
+                    data.Add(item.Id, item);
+                }
+            }
+            return data;
             
         }
-        static void DoSSH(DeviceIdentity Dev)
+        static void DoSSH(DeviceIdentity Dev, UpdateQue Que)
         {
             // Setup Credentials and Server Information
             ConnectionInfo ConnNfo = new ConnectionInfo(Dev.IpAddress, 22, Dev.UserName,
@@ -83,7 +158,7 @@ namespace RDS.Service
                 sshclient.Connect();
 
                 // quick way to use ist, but not best practice - SshCommand is not Disposed, ExitStatus not checked...
-                Console.WriteLine(sshclient.CreateCommand($"cd Downloads/ && wget -O foo-{rnd.Next(1,100)}.html google.com").Execute());
+                Console.WriteLine(sshclient.CreateCommand($"cd Downloads/ && wget -O foo-{rnd.Next(1,100)}.html {Que.FirmwareUrl}").Execute());
                 Console.WriteLine($"SSH executed on {Dev.Name}");
                 sshclient.Disconnect();
             }

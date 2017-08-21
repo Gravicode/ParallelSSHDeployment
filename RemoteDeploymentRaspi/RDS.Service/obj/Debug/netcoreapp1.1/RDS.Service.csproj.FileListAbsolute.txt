@@ -18,3 +18,14 @@ c:\experiment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Serv
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.pdb
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Data.dll
 \\vmware-host\Shared Folders\Documents\GitHub\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Data.pdb
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.deps.json
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.runtimeconfig.json
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.runtimeconfig.dev.json
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.dll
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Service.pdb
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Data.dll
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\bin\Debug\netcoreapp1.1\RDS.Data.pdb
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.csprojResolveAssemblyReference.cache
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.AssemblyInfo.cs
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.dll
+C:\Jobs\Elitery\ParallelSSHDeployment\RemoteDeploymentRaspi\RDS.Service\obj\Debug\netcoreapp1.1\RDS.Service.pdb
